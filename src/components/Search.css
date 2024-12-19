@@ -1,0 +1,12 @@
+.Search {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .Search h3 {
+    color:blue;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }

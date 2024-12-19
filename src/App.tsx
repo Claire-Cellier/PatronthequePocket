@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+
+import "./Reset.css";
+import "./App.css";
+
+import Patterns from "./data/data";
+
+import Header from "./components/Header";
+import FilterCategories from "./components/FilterCategories";
+import FilterLevel from "./components/FilterLevel";
+import Search from "./components/Search";
+import PatternsCards from "./components/PatternsCards";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+	const [search, setSearch] = useState("");
+	const [filterCategory, setFilterCategory] = useState("");
+	const [filterDifficulty, setFilterDifficulty] = useState("");
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+	const patternsFiltred = Patterns.filter(
+		(pattern) =>
+			pattern.name.toLowerCase().includes(search) &&
+			pattern.category.includes(filterCategory) &&
+			pattern.difficulty.some((diff) => diff.includes(filterDifficulty),
+			));
+
+	return (
+		<>
+			<Header />
+			<section>
+				<h3>Recherche </h3>
+				<div className="Search">
+					<h4>Par nom : </h4>
+					<Search search={search} setSearch={setSearch} />
+				</div>
+				<div className="Search">
+					<h4>Par catégorie :</h4>
+					<FilterCategories filterCategory={filterCategory} setFilterCategory={setFilterCategory} />
+				</div>
+				<div className="Search">
+					<h4>Par niveau :</h4>
+					<FilterLevel filterDifficulty={filterDifficulty} setFilterDifficulty={setFilterDifficulty} />
+				</div>
+			</section>
+			<section className="Cards">
+				<h3> Mes patrons de couture</h3>
+				<article className="Patterns">
+					{patternsFiltred.map((pattern) => {
+						return (
+							<PatternsCards key={pattern.pattern_id} pattern={pattern} />
+						)
+					})}
+				</article>
+			</section>
+			<Footer />
+		</>
+	);
 }
 
-export default App
+export default App;

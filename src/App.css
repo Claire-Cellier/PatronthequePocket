@@ -1,42 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway+Dots&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway+Dots&family=Sacramento&display=swap');
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 720px; */
   text-align: center;
+	--title-font: "Sacramento";
+  --text-font: "Montserrat";
+  --color-green: #627353;
+  background-color: #F6F4E9;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1, h2, h6 {
+  font-family: var(--title-font);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: var(--text-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h3 {
+  font-family: var(--text-font);
+  font-weight: 700;
 }
 
-.card {
-  padding: 2em;
+.Search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
-
-.read-the-docs {
-  color: #888;
+.Patterns {
+  display : flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em;
+  gap: 2rem;
 }
