@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway+Dots&family=Sacramento&display=swap');
 
 #root {
-  /* max-width: 720px; */
+  max-width: 720px;
   text-align: center;
 	--title-font: "Sacramento";
   --text-font: "Montserrat";
