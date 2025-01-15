@@ -41,6 +41,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-justify: left;
    transform: rotateY(0deg);
 }
 
@@ -48,8 +49,7 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
-   text-align: left;
+   align-items: left;
    padding-left: 10rem;
    transform: rotateY(180deg);
 }
