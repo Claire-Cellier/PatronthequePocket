@@ -33,7 +33,7 @@ const Patterns = [
         "difficulty": ["Débutant", "Intermédiaire"],
         "sizes": ["34", "36", "38", "40", "42", "44", "46"],
         "fabrics": ["coton", "viscose", "crêpe de viscose", "crêpe léger"],
-        "quantity": "1,60",
+        "quantity": "1.60",
         "instructions_link": "https://dressyourbody.fr/fr/produit/robe-in-the-sun"
     },
     {
@@ -45,7 +45,7 @@ const Patterns = [
         "difficulty": ["Intermédiaire"],
         "sizes": ["34", "36", "38", "40", "42", "44", "46"],
         "fabrics": ["viscose", "crêpe de viscose", "mélange lin/viscose", "soie"],
-        "quantity": "1,70",
+        "quantity": "1.70",
         "mercerie": ["1 fermeture invisible de 22 cm", "2 ou 5 boutons d'environ 20 mm de diamètre", "Thermocollant pour la ceinture"],
         "instructions_link": "https://jolilab.fr/products/jupe-mint-patron-pochette-ou-pdf?gad_source=1&gclid=Cj0KCQjw7Py4BhCbARIsAMMx-_K3vRB-UzJM3CefG3QFiMO06oDqwxF0rNAV9LZNWPm4SHgUroLloq8aAuq5EALw_wcB"
     },
@@ -58,7 +58,7 @@ const Patterns = [
         "difficulty": ["Intermédiaire"],
         "sizes": ["34", "36", "38", "40", "42", "44", "46", "48"],
         "fabrics": ["viscose", "coton très fluide", "tencel", "crêpe très léger"],
-        "quantity": "3,15",
+        "quantity": "3.15",
         "mercerie": ["1 fermeture éclair invisible de 18 cm, Elastique de 3 cm de large, Termocollant"],
         "instructions_link": "https://mapetitefabrique-patronsdecouture.fr/products/patron-pdf-cesar-pantalon"
     },
@@ -71,7 +71,7 @@ const Patterns = [
         "difficulty": ["Confirmé"],
         "sizes": ["34", "36", "38", "40", "42", "44", "46"],
         "fabrics": ["crêpe", "viscose", "coton", "mousseline", "tencel", "soie", "cupro", "coton brodé", "plumetis"],
-        "quantity": "1,70",
+        "quantity": "1.70",
         "mercerie": ["Termocollant", "8 boutons entre 8 et 12 mn de diamètre", "30 cm de biais"],
         "instructions_link": "https://mapetitefabrique-patronsdecouture.fr/products/patron-pdf-cesar-pantalon"
     },
@@ -84,10 +84,10 @@ const Patterns = [
         "difficulty": ["Intermédiaire"],
         "sizes": ["34", "36", "38", "40", "42", "44", "46", "48"],
         "fabrics": ["viscose", "coton", "tencel", "lin", "soie", "jacquard fin"],
-        "quantity": "1,30",
+        "quantity": "1.30",
         "mercerie": ["Termocollant", "1 bouton de 15 mn de diamètre",],
         "instructions_link": "https://www.maison-fauve.com/products/patron-blouse-tilda-patron-pdf-gratuit?srsltid=AfmBOorCeD9zItWulJ6GYy8KZ303etp6g5IkWwvdakvLRNDhs6jHZj7q"
     }
 ]
 
-export default Patterns
+export default Patterns;

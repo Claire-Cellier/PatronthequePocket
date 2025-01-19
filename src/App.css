@@ -1,39 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway+Dots&family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway+Dots&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway+Dots&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway+Dots&family=Sacramento&display=swap");
 
 #root {
-  /* max-width: 720px; */
-  text-align: center;
+	text-align: center;
 	--title-font: "Sacramento";
-  --text-font: "Montserrat";
-  --color-green: #627353;
-  background-color: #F6F4E9;
+	--text-font: "Montserrat";
+	--color-green: #627353;
 }
 
-h1, h2, h6 {
-  font-family: var(--title-font);
+body {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(186, 186, 186, 0.6);
+	background-blend-mode: darken;
+	background-image: url("src/assets/patrontheque_background2.jpg");
+}
+
+img {
+	max-height: 25vh;
+	padding-top: 2rem;
+}
+
+h1,
+h2,
+h6 {
+	font-family: var(--title-font);
+}
+
+
+h3,
+h4 {
+	font-family: var(--text-font);
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	color: white;
+}
+
+
+h2 {
+	font-size: 2rem;
 }
 
 p {
-  font-family: var(--text-font);
+	font-family: var(--text-font);
+	color: grey;
 }
 
-h3 {
-  font-family: var(--text-font);
-  font-weight: 700;
+.Categories {
+
+	font-size: 2rem;
+	margin-bottom: 1rem;
 }
 
-.Search {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
+.SearchBar {
+	margin-bottom: 2rem;
 }
+
+.SearchBar ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+}
+
 .Patterns {
-  display : flex; 
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 1em;
-  gap: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 1em;
+	gap: 2rem;
 }

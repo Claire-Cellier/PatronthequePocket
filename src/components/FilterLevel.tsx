@@ -6,6 +6,7 @@ interface FilterInterface {
 	filterDifficulty: string;
 	setFilterDifficulty: Dispatch<SetStateAction<string>>;
 }
+
 function FilterLevel({ filterDifficulty, setFilterDifficulty }: FilterInterface) {
 	const difficulties = Array.from(
 		new Set(
