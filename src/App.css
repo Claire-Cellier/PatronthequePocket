@@ -16,11 +16,6 @@ body {
 	background-image: url("src/images/patrontheque_background2.jpg");
 }
 
-img {
-	max-height: 25vh;
-	padding-top: 2rem;
-}
-
 h1,
 h2,
 h6 {
@@ -44,6 +39,11 @@ h2 {
 p {
 	font-family: var(--text-font);
 	color: grey;
+}
+
+img {
+	max-height: 25vh;
+	padding-top: 2rem;
 }
 
 .Categories {
