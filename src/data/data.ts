@@ -90,4 +90,4 @@ const Patterns = [
     }
 ]
 
-export default Patterns
+export default Patterns;

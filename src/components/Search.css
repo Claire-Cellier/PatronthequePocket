@@ -1,12 +1,21 @@
-.Search {
+  .Search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+  }
+
+  .Search {
     background-color: grey;
     display: flex;
     flex-direction: column;
     padding: 1rem;
   }
   
+    
   .Search h3 {
-    color:blue;
     padding: 1rem;
     font-size: 1.5rem;
   }

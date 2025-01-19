@@ -1,9 +1,25 @@
-img {
-    max-height: 25vh;
-    padding-top: 2rem;
+header {
+    background-color: rgba(186, 186, 186, 0.5);
 }
+
+.logo {
+	max-height: 10vh;
+	padding-top: 2rem;
+}
+
 h1 {
-    color: var(--color-green);
-    font-size: 5rem;
-    padding: 2rem;
+	color: white;
+	font-size: 5rem;
+    font-weight: 600;
+	padding: 2rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
 }

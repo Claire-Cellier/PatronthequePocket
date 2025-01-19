@@ -34,31 +34,33 @@ function App() {
 	return (
 		<>
 			<Header />
-			<section>
-				<h3>Recherche </h3>
-				<div className="Search">
+			<section className="SearchBar">
+				<h3 className="Categories">Recherche </h3>
+				<ul>
+				<li className="Search">
 					<h4>Par nom : </h4>
 					<Search search={search} setSearch={setSearch} />
-				</div>
-				<div className="Search">
+				</li>
+				<li className="Search">
 					<h4>Par catégorie :</h4>
 					<FilterCategories filterCategory={filterCategory} setFilterCategory={setFilterCategory} />
-				</div>
-				<div className="Search">
+				</li>
+				<li className="Search">
 					<h4>Par niveau :</h4>
 					<FilterLevel filterDifficulty={filterDifficulty} setFilterDifficulty={setFilterDifficulty} />
-				</div>
-				<div className="Search">
+				</li>
+				<li className="Search">
 					<h4>Par tissu :</h4>
 					<FilterFabrics filterFabric={filterFabric} setFilterFabric={setFilterFabric} />
-				</div>
+				</li>
 				<div className="Search">
 					<h4>Par longeur de tissu nécessaire :</h4>
 					<FilterMeter filterLength={filterLength} setFilterLength={setFilterLength} />
 				</div>
+				</ul>
 			</section>
 			<section className="Cards">
-				<h3> Mes patrons de couture</h3>
+				<h3 className="Categories"> Mes patrons de couture</h3>
 				<article className="Patterns">
 					{patternsFiltred.map((pattern) => {
 						return (
