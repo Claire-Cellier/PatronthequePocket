@@ -13,7 +13,7 @@ body {
 	justify-content: center;
 	background-color: rgba(186, 186, 186, 0.6);
 	background-blend-mode: darken;
-	background-image: url("src/images/patrontheque_background2.jpg");
+	background-image: url("../images/patrontheque_background2.jpg");
 }
 
 h1,
