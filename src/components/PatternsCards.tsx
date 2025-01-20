@@ -1,5 +1,4 @@
 import "./PatternsCards.css";
-import Patterns from "../data/data";
 
 interface PatternsCardsInterface {
 	pattern: {
@@ -14,7 +13,7 @@ interface PatternsCardsInterface {
 }
 
 function PatternsCards({ pattern }: PatternsCardsInterface) {
-	const imgSrc = "src/images/" + pattern.image;
+	const imgSrc = `src/images/${pattern.image}`;
 
 	return (
 		<div className="cards">
