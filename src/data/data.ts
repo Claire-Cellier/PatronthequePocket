@@ -26,7 +26,7 @@ const Patterns = [
         "instructions_link": "https://sewoverit.com/products/eve-dress-sewing-pattern"
     },
     {
-        "image" : "in_the_sun.jpg",
+        "image" : "inTheSun.jpg",
         "name": "In the sun",
         "designer": "Dress your body",
         "category": "Robe",
