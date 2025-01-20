@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway+Dots&family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway+Dots&family=Sacramento&display=swap");
 
+
 #root {
 	text-align: center;
 	--title-font: "Sacramento";
@@ -13,7 +14,7 @@ body {
 	justify-content: center;
 	background-color: rgba(186, 186, 186, 0.6);
 	background-blend-mode: darken;
-	background-image: url("./images/patrontheque_background2.jpg");
+	background-image: url("./images/patrontheque.jpg");
 }
 
 h1,
