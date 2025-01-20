@@ -13,7 +13,7 @@ interface PatternsCardsInterface {
 }
 
 function PatternsCards({ pattern }: PatternsCardsInterface) {
-	const imgSrc = `../images/${pattern.image}`;
+	const imgSrc = `./images/${pattern.image}`;
 
 	return (
 		<div className="cards">
