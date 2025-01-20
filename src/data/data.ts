@@ -1,7 +1,7 @@
 const Patterns = [
     {
         "pattern_id": "001",
-        "image" : "https://drive.google.com/file/d/1f6Y8t5FLli9HbwSytutRQVsY6FK4RfnV/view?usp=sharing",
+        "image" : "https://ibb.co/PY3Xk8N",
         "name": "César",
         "designer": "Ma petite fabrique",
         "category": "Pantalon",
