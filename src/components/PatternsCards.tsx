@@ -13,14 +13,13 @@ interface PatternsCardsInterface {
 }
 
 function PatternsCards({ pattern }: PatternsCardsInterface) {
-	const imgSrc = `../images/${pattern.image}`;
 
 	return (
 		<div className="cards">
 			<div className="card">
 				<div className="card-inner">
 					<div className="card-front">
-						<img src={imgSrc} alt={pattern.name} />
+						<img src={pattern.image} alt={pattern.name} />
 						<h2>{pattern.name}</h2>
 						<h3>{pattern.designer}</h3>
 					</div>
