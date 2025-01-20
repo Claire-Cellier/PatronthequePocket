@@ -1,7 +1,7 @@
 const Patterns = [
     {
         "pattern_id": "001",
-        "image" : "cesar.jpg",
+        "image" : "https://drive.google.com/file/d/1f6Y8t5FLli9HbwSytutRQVsY6FK4RfnV/view?usp=sharing",
         "name": "César",
         "designer": "Ma petite fabrique",
         "category": "Pantalon",
@@ -14,7 +14,7 @@ const Patterns = [
     },
     {
         "pattern_id": "002",
-        "image" : "eve.jpg",
+        "image" : "https://drive.google.com/file/d/12R_lvRcsdYsveDzg6t480ikuaokiyOAx/view?usp=drive_link",
         "name": "Eve",
         "designer": "Sew over it",
         "category": "Robe",
@@ -26,7 +26,8 @@ const Patterns = [
         "instructions_link": "https://sewoverit.com/products/eve-dress-sewing-pattern"
     },
     {
-        "image" : "inTheSun.jpg",
+        "pattern_id": "003",
+        "image" : "https://drive.google.com/file/d/1XjJomybv4sCFPowyNYAY8Fto_Ii6so7j/view?usp=drive_link",
         "name": "In the sun",
         "designer": "Dress your body",
         "category": "Robe",
@@ -38,7 +39,7 @@ const Patterns = [
     },
     {
         "pattern_id": "004",
-        "image" : "mint.jpg",
+        "image" : "https://drive.google.com/file/d/1tjdjSpoLRRX33T7lH2pS5nEKCoQfXAD8/view?usp=drive_link",
         "name": "Mint",
         "designer": "Joli Lab",
         "category": "Jupe",
@@ -51,7 +52,7 @@ const Patterns = [
     },
     {
         "pattern_id": "005",
-        "image" : "nais.jpg",
+        "image" : "https://drive.google.com/file/d/1jlrZtLq1HDTmRa3DLu6jJuCDjfjEKTED/view?usp=drive_link",
         "name": "Naïs",
         "designer": "Ma petite fabrique",
         "category": "Robe",
@@ -64,7 +65,7 @@ const Patterns = [
     },
     {
         "pattern_id": "006",
-        "image" : "sayan.jpg",
+        "image" : "https://drive.google.com/file/d/11ExFT7IgPrAI3ovuWSUPTjE_CeyP15RI/view?usp=drive_link",
         "name": "Sayan",
         "designer": "Pretty mercerie",
         "category": "Blouse",
@@ -77,7 +78,7 @@ const Patterns = [
     },
     {
         "pattern_id": "007",
-        "image" : "tilda.jpg",
+        "image" : "https://drive.google.com/file/d/1CJgiu05cuP5V8OwtJK5cAnuoJokzpCDO/view?usp=drive_link",
         "name": "Tilda",
         "designer": "Maison Fauve",
         "category": "Blouse",
