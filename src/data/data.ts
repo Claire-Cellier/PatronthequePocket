@@ -14,7 +14,7 @@ const Patterns = [
     },
     {
         "pattern_id": "002",
-        "image" : "https://drive.google.com/file/d/12R_lvRcsdYsveDzg6t480ikuaokiyOAx/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/12R_lvRcsdYsveDzg6t480ikuaokiyOAx/view?usp=sharing",
         "name": "Eve",
         "designer": "Sew over it",
         "category": "Robe",
@@ -27,7 +27,7 @@ const Patterns = [
     },
     {
         "pattern_id": "003",
-        "image" : "https://drive.google.com/file/d/1XjJomybv4sCFPowyNYAY8Fto_Ii6so7j/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/1XjJomybv4sCFPowyNYAY8Fto_Ii6so7j/view?usp=sharing",
         "name": "In the sun",
         "designer": "Dress your body",
         "category": "Robe",
@@ -39,7 +39,7 @@ const Patterns = [
     },
     {
         "pattern_id": "004",
-        "image" : "https://drive.google.com/file/d/1tjdjSpoLRRX33T7lH2pS5nEKCoQfXAD8/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/1tjdjSpoLRRX33T7lH2pS5nEKCoQfXAD8/view?usp=sharing",
         "name": "Mint",
         "designer": "Joli Lab",
         "category": "Jupe",
@@ -52,7 +52,7 @@ const Patterns = [
     },
     {
         "pattern_id": "005",
-        "image" : "https://drive.google.com/file/d/1jlrZtLq1HDTmRa3DLu6jJuCDjfjEKTED/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/1jlrZtLq1HDTmRa3DLu6jJuCDjfjEKTED/view?usp=sharing",
         "name": "Naïs",
         "designer": "Ma petite fabrique",
         "category": "Robe",
@@ -65,7 +65,7 @@ const Patterns = [
     },
     {
         "pattern_id": "006",
-        "image" : "https://drive.google.com/file/d/11ExFT7IgPrAI3ovuWSUPTjE_CeyP15RI/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/11ExFT7IgPrAI3ovuWSUPTjE_CeyP15RI/view?usp=sharing",
         "name": "Sayan",
         "designer": "Pretty mercerie",
         "category": "Blouse",
@@ -78,7 +78,7 @@ const Patterns = [
     },
     {
         "pattern_id": "007",
-        "image" : "https://drive.google.com/file/d/1CJgiu05cuP5V8OwtJK5cAnuoJokzpCDO/view?usp=drive_link",
+        "image" : "https://drive.google.com/file/d/1CJgiu05cuP5V8OwtJK5cAnuoJokzpCDO/view?usp=sharing",
         "name": "Tilda",
         "designer": "Maison Fauve",
         "category": "Blouse",
