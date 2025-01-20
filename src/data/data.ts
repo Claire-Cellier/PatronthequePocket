@@ -1,7 +1,15 @@
+import cesar from "../images/cesar.jpg";
+import eve from "../images/eve.jpg";
+import inTheSun from "../images/inTheSun.jpg";
+import mint from "../images/mint.jpg";
+import nais from "../images/nais.jpg";
+import sayan from "../images/sayan.jpg";
+import tilda from "../images/tilda.jpg";
+
 const Patterns = [
     {
         "pattern_id": "001",
-        "image" : "https://ibb.co/PY3Xk8N",
+        "image" : `${cesar}`,
         "name": "César",
         "designer": "Ma petite fabrique",
         "category": "Pantalon",
@@ -14,7 +22,7 @@ const Patterns = [
     },
     {
         "pattern_id": "002",
-        "image" : "https://drive.google.com/file/d/12R_lvRcsdYsveDzg6t480ikuaokiyOAx/view?usp=sharing",
+        "image" : `${eve}`,
         "name": "Eve",
         "designer": "Sew over it",
         "category": "Robe",
@@ -27,7 +35,7 @@ const Patterns = [
     },
     {
         "pattern_id": "003",
-        "image" : "https://drive.google.com/file/d/1XjJomybv4sCFPowyNYAY8Fto_Ii6so7j/view?usp=sharing",
+        "image" : `${inTheSun}`,
         "name": "In the sun",
         "designer": "Dress your body",
         "category": "Robe",
@@ -39,7 +47,7 @@ const Patterns = [
     },
     {
         "pattern_id": "004",
-        "image" : "https://drive.google.com/file/d/1tjdjSpoLRRX33T7lH2pS5nEKCoQfXAD8/view?usp=sharing",
+        "image" : `${mint}`,
         "name": "Mint",
         "designer": "Joli Lab",
         "category": "Jupe",
@@ -53,7 +61,7 @@ const Patterns = [
     {
         "pattern_id": "005",
         "image" : "https://drive.google.com/file/d/1jlrZtLq1HDTmRa3DLu6jJuCDjfjEKTED/view?usp=sharing",
-        "name": "Naïs",
+        "name": `${nais}`,
         "designer": "Ma petite fabrique",
         "category": "Robe",
         "difficulty": ["Intermédiaire"],
@@ -65,7 +73,7 @@ const Patterns = [
     },
     {
         "pattern_id": "006",
-        "image" : "https://drive.google.com/file/d/11ExFT7IgPrAI3ovuWSUPTjE_CeyP15RI/view?usp=sharing",
+        "image" : `${sayan}`,
         "name": "Sayan",
         "designer": "Pretty mercerie",
         "category": "Blouse",
@@ -78,7 +86,7 @@ const Patterns = [
     },
     {
         "pattern_id": "007",
-        "image" : "https://drive.google.com/file/d/1CJgiu05cuP5V8OwtJK5cAnuoJokzpCDO/view?usp=sharing",
+        "image" : `${tilda}`,
         "name": "Tilda",
         "designer": "Maison Fauve",
         "category": "Blouse",
