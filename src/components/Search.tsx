@@ -1,3 +1,5 @@
+import type { Dispatch } from "react";
+
 interface SearchInterface {
     search : string,
     setSearch : Dispatch<React.SetStateAction<string>>,
