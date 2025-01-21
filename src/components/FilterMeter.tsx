@@ -32,7 +32,7 @@ function FilterMeter({ filterLength, setFilterLength }: FilterInterface) {
 				onChange={(e) => setFilterLength(e.target.value)}
 				className="length-slider"
 			/>
-			<h4>{filterLength} mètre(s)</h4>
+			<h4>{filterLength} m</h4>
 		</>
 	);
 }

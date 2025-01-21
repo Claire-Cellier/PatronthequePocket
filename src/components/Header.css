@@ -5,6 +5,7 @@ header {
 .logo {
 	max-height: 10vh;
 	padding-top: 2rem;
+	border-radius: 15%;
 }
 
 h1 {

@@ -60,8 +60,8 @@ const Patterns = [
     },
     {
         "pattern_id": "005",
-        "image" : "https://drive.google.com/file/d/1jlrZtLq1HDTmRa3DLu6jJuCDjfjEKTED/view?usp=sharing",
-        "name": `${nais}`,
+        "image" : `${nais}`,
+        "name": "Naïs",
         "designer": "Ma petite fabrique",
         "category": "Robe",
         "difficulty": ["Intermédiaire"],
