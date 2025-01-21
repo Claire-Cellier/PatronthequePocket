@@ -1,21 +1,87 @@
-  .Search {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    color: white;
-  }
+.SearchBarBox {
+	background-color: aqua;
+	padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Loupe {
+	height: 16px;
+	width: auto;
+	margin-right: 0.5rem;
+	margin-top: 0,5rem;
+	padding: 0;
+}
 
-  .Search {
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  
-    
-  .Search h3 {
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
+.Searchbox {
+	width: 30rem;
+	height: 1rem;
+	border-color: lightgrey;
+}
+
+/* From Uiverse.io by xetrov47 */ 
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #767676;
+  color: #767676;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: -1.5rem;
+  height: 30px;
+  width: 15rem;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #767676;
+  font-size: 14px;
+}
+
+.search__button {
+  border: none;
+  background-color: #fff;
+  margin-top: 0.1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+
+.Filter {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
+  transition: all 0.3s;
+  margin-left: 0.5rem;
+}
+
+.Filter img {
+  height: 16px;
+  fill: rgb(77, 77, 77);
+  transition: all 0.3s;
+}
+.Filter:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+  background-color: var(--color-green);
+}
+.Filter:hover img {
+  fill: white;
+}

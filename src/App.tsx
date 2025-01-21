@@ -21,54 +21,56 @@ function App() {
 	const [filterFabric, setFilterFabric] = useState("");
 	const [filterLength, setFilterLength] = useState("");
 
-	const patternsFiltred = Patterns.filter(
-		(pattern) =>
+	const patternsFiltred = Patterns.filter((pattern) => {
+		const quantity = Number.parseFloat(pattern.quantity); 
+		const filterVal = Number.parseFloat(filterLength); 
+
+		return (
 			pattern.name.toLowerCase().includes(search) &&
 			pattern.category.includes(filterCategory) &&
 			pattern.difficulty.some((diff) => diff.includes(filterDifficulty)) &&
 			pattern.fabrics.some((fab) => fab.includes(filterFabric)) &&
-			pattern.quantity.includes(filterLength),
-	);
+			(!Number.isNaN(quantity) && !Number.isNaN(filterVal) ? quantity <= filterVal : true)
+		);
+	});
 
 	return (
 		<>
 			<Header />
-			<section className="SearchBar">
-				<h3 className="Categories">Recherche </h3>
-				<ul>
-					<li className="Search">
-						<h4>Par nom : </h4>
-						<Search search={search} setSearch={setSearch} />
-					</li>
-					<li className="Search">
-						<h4>Par catégorie :</h4>
-						<FilterCategories
-							filterCategory={filterCategory}
-							setFilterCategory={setFilterCategory}
-						/>
-					</li>
-					<li className="Search">
-						<h4>Par niveau :</h4>
-						<FilterLevel
-							filterDifficulty={filterDifficulty}
-							setFilterDifficulty={setFilterDifficulty}
-						/>
-					</li>
-					<li className="Search">
-						<h4>Par tissu :</h4>
-						<FilterFabrics
-							filterFabric={filterFabric}
-							setFilterFabric={setFilterFabric}
-						/>
-					</li>
-					<div className="Search">
-						<h4>Par longeur de tissu nécessaire :</h4>
-						<FilterMeter
-							filterLength={filterLength}
-							setFilterLength={setFilterLength}
-						/>
-					</div>
-				</ul>
+			<section className="Search">
+				<Search search={search} setSearch={setSearch} />
+				<section className="Filters">
+					<ul>
+						<li>
+							<h4>Par catégorie :</h4>
+							<FilterCategories
+								filterCategory={filterCategory}
+								setFilterCategory={setFilterCategory}
+							/>
+						</li>
+						<li>
+							<h4>Par niveau de couture :</h4>
+							<FilterLevel
+								filterDifficulty={filterDifficulty}
+								setFilterDifficulty={setFilterDifficulty}
+							/>
+						</li>
+						<li>
+							<h4>Par type de tissu :</h4>
+							<FilterFabrics
+								filterFabric={filterFabric}
+								setFilterFabric={setFilterFabric}
+							/>
+						</li>
+						<div>
+							<h4>Par métrage de tissu nécessaire :</h4>
+							<FilterMeter
+								filterLength={filterLength}
+								setFilterLength={setFilterLength}
+							/>
+						</div>
+					</ul>
+				</section>
 			</section>
 			<section className="Cards">
 				<h3 className="Categories"> Mes patrons de couture</h3>

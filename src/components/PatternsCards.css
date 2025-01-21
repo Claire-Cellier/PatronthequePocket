@@ -19,7 +19,7 @@
 
 .card img {
 	max-width: 70%;
-	height: auto;
+	padding-top: 2rem;
 }
 
 .card h3 {
@@ -86,5 +86,5 @@
 }
 
 .pictoline {
-   margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }

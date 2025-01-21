@@ -1,19 +1,39 @@
 import type { Dispatch } from "react";
+import loupe from "../images/loupe.png";
+import filter from "../images/filtre.png";
+
+import "./Search.css";
 
 interface SearchInterface {
-    search : string,
-    setSearch : Dispatch<React.SetStateAction<string>>,
-}
-function Search ({search, setSearch} : SearchInterface){
-    return (
-        <input 
-        type="text" 
-        id="search" 
-        value={search} 
-        placeholder="Nom du patron"
-        onChange={(event) => setSearch(event.target.value)}
-       />
-    )
+	search: string;
+	setSearch: Dispatch<React.SetStateAction<string>>;
 }
 
-export default Search
+function Search({ search, setSearch }: SearchInterface) {
+
+	return (
+		<div className="SearchBarBox">
+			<div className="search">
+				<input
+					type="text"
+					className="search_input"
+					value={search}
+					placeholder="Recherche"
+					onChange={(event) => setSearch(event.target.value)}
+				/>
+				<button type="button" className="search_button">
+					<img
+						className="Loupe"
+						src={loupe}
+						alt="picto loupe - crédit: Flaticon- "
+					/>
+				</button>
+			</div>
+			<button type="button" className="Filter">
+				<img src={filter} alt="picto search filter - crédit: Freepik" />
+			</button>
+		</div>
+	);
+}
+
+export default Search;
