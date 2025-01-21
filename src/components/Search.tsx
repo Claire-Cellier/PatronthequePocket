@@ -13,15 +13,15 @@ function Search({ search, setSearch }: SearchInterface) {
 
 	return (
 		<div className="SearchBarBox">
-			<div className="search">
+			<div className="SearchBox">
 				<input
 					type="text"
-					className="search_input"
+					className="SearchInput"
 					value={search}
 					placeholder="Recherche"
 					onChange={(event) => setSearch(event.target.value)}
 				/>
-				<button type="button" className="search_button">
+				<button type="button" className="SearchButton">
 					<img
 						className="Loupe"
 						src={loupe}

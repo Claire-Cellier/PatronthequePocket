@@ -30,7 +30,7 @@ function App() {
 			pattern.category.includes(filterCategory) &&
 			pattern.difficulty.some((diff) => diff.includes(filterDifficulty)) &&
 			pattern.fabrics.some((fab) => fab.includes(filterFabric)) &&
-			(!Number.isNaN(quantity) && !Number.isNaN(filterVal) ? quantity <= filterVal : true)
+			(!Number.isNaN(quantity) && !Number.isNaN(filterVal) ? quantity >= filterVal : true)
 		);
 	});
 
