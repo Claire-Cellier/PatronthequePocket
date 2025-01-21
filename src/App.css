@@ -44,7 +44,6 @@ p {
 
 img {
 	max-height: 25vh;
-	padding-top: 2rem;
 }
 
 .Categories {
@@ -53,13 +52,17 @@ img {
 	margin-bottom: 1rem;
 }
 
-.SearchBar {
-	margin-bottom: 2rem;
+.Search {
+	margin: 2rem 0rem 2rem 0rem;
 }
 
-.SearchBar ul {
+.Filters{
+	padding: 0.5rem;
+}
+
+.Filters ul {
 	list-style: none;
-	padding: 0;
+	margin-top: 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;

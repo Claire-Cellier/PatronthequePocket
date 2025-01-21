@@ -26,13 +26,13 @@ function FilterMeter({ filterLength, setFilterLength }: FilterInterface) {
 				title="longeur"
 				type="range"
 				min="0.5"
-				max="10"
-				step="1"
+				max="5"
+				step="0.5"
 				value={filterLength}
-				onChange={(e) => setFilterLength(e.target.value)}
+				onChange={(e) => setFilterLength(Number.parseFloat(e.target.value).toString())}
 				className="length-slider"
 			/>
-			<h4>{filterLength} mètre(s)</h4>
+			<h4>{filterLength}</h4>
 		</>
 	);
 }
