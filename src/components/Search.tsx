@@ -10,10 +10,14 @@ interface SearchInterface {
 }
 
 function Search({ search, setSearch }: SearchInterface) {
-
 	return (
 		<div className="SearchBarBox">
 			<div className="SearchBox">
+				<img
+					className="Loupe"
+					src={loupe}
+					alt="picto loupe - crédit: Flaticon- "
+				/>
 				<input
 					type="text"
 					className="SearchInput"
@@ -21,13 +25,6 @@ function Search({ search, setSearch }: SearchInterface) {
 					placeholder="Recherche"
 					onChange={(event) => setSearch(event.target.value)}
 				/>
-				<button type="button" className="SearchButton">
-					<img
-						className="Loupe"
-						src={loupe}
-						alt="picto loupe - crédit: Flaticon- "
-					/>
-				</button>
 			</div>
 			<button type="button" className="Filter">
 				<img src={filter} alt="picto search filter - crédit: Freepik" />

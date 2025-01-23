@@ -9,18 +9,21 @@
   display: flex;
   align-items: center;
   text-align: center;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin-right: 1rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  height: 30px;
+  width: 14rem;
 }
 
 .SearchInput {
-  font-family: inherit;
-  font-size: inherit;
-  border: 1px solid #fff;
+  font-family: var(--text-font);
   color: #767676;
-  padding: 5px 10px;
-  border-radius: 4px;
-  margin-right: -2.35rem;
-  height: 30px;
-  width: 15rem;
+  border: none;
+  height: 20px;
+  width: 12rem;
 }
 
 .Loupe {
@@ -42,8 +45,8 @@
 }
 
 .Filter {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -64,7 +67,8 @@
 }
 .Filter:hover {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
-  background-color: lightgrey;
+  background-color: grey;
+  border: grey;
 }
 .Filter:hover img {
   fill: white;
