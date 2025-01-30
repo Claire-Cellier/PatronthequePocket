@@ -21,6 +21,11 @@ function App() {
 	const [filterFabric, setFilterFabric] = useState("");
 	const [filterLength, setFilterLength] = useState("");
 
+	const [showFilters, setShowFilters] = useState(false);
+	const toggleFilters = () => {
+		setShowFilters((prev) => !prev);
+	};
+
 	const patternsFiltred = Patterns.filter((pattern) => {
 		const quantity = Number.parseFloat(pattern.quantity); 
 		const filterVal = Number.parseFloat(filterLength); 
@@ -38,7 +43,8 @@ function App() {
 		<>
 			<Header />
 			<section className="Search">
-				<Search search={search} setSearch={setSearch} />
+				<Search search={search} setSearch={setSearch} toggleFilters={toggleFilters}/>
+				{showFilters && (
 				<section className="Filters">
 					<ul>
 						<li>
@@ -71,6 +77,7 @@ function App() {
 						</div>
 					</ul>
 				</section>
+				)}
 			</section>
 			<section className="Cards">
 				<h3 className="Categories"> Mes patrons de couture</h3>
